@@ -36,7 +36,7 @@ function createIframe(video) {
     const videoKey = (video && video.key) || 'No key found!!!';
     const iframe = document.createElement('iframe');
     iframe.src = `http://www.youtube.com/embed/${videoKey}`;
-    iframe.width = 210;
+    iframe.width = 300;
     iframe.height = 210;
     iframe.allowFullscreen = true;
     return iframe;
