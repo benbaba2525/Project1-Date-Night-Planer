@@ -1,0 +1,374 @@
+body {
+	background-image:               url("../images/heart-background.jpg");
+    font-family:                    'Nova Square', cursive;
+    background-repeat:              no-repeat;
+    background-size:                cover;
+}
+
+.jumbotron {
+    text-align:                     center;
+    padding-bottom:                 2px;
+    padding-top:                    10px;
+    filter:                         drop-shadow(5px 5px 10px darkmagenta);
+}
+
+h1 {
+    font-family:                    'Amarante', cursive;
+    font-size:                      260%;
+    color:                          darkred;
+    filter:                         drop-shadow(2px 2px 2px rgb(139, 247, 247));
+    -webkit-text-stroke:            1px #093249;
+}
+
+.wrapper {
+    width:                          90%;
+    height:                         12%;
+    text-align:                     center;
+    margin:                         auto;
+}
+
+.container {
+    background-color:               white;
+    width:                          90%;
+    margin:                         auto;
+    border-radius:                  16px;
+
+}
+
+.nav-item {
+    vertical-align:                 middle;
+    padding-top:                    8px;
+    padding-bottom:                 0px;
+}
+
+#active {
+    background-color:               crimson;
+    color:                          white;
+}
+
+#link {
+    color:                          darkred;
+}
+
+#link:hover {
+    background-color:               #E34363;
+    color:                          gold;
+}
+
+#desc {
+    color:                          darkred;
+    font-size:                      110%;
+    text-align:                     center;
+}
+
+
+
+label {
+    color:                          darkred;
+    font-size:                      110%;
+    text-align:                     center;
+}
+
+.btn-default {
+    color:                          #000;
+    font-size:                      medium;
+    background-color:               goldenrod;
+}
+
+.btn-default:hover {
+    background-color:               darkgoldenrod;
+}
+
+.holder {
+    float:                          left;
+}
+
+.form-row {
+    padding-top:                    8px; 
+    line-height:                    2; 
+}
+
+ #navbar    {
+    padding-bottom:                 10px; 
+ }
+
+.footer {
+    background-color:               #666666;
+    color:                          darkgoldenrod;
+    padding:                        2px;
+    text-align:                     center;
+    font-size:                      14px;
+    width:                          100%;
+    margin:                         auto;
+    position:                       fixed;
+    bottom:                         0;
+    left:                           0;
+    border-top:                     3px solid darkred;
+    vertical-align:                 bottom;
+    opacity:                        0.5;
+ 
+  }
+  
+.footer:hover {
+    opacity:                        1.0;
+  }
+
+
+/* DINNER PAGE SPECIFIC CSS */
+
+#pic{
+    float:                          left;
+    padding:                        2px;
+    padding-right:                  10px;
+    width:                          160px;
+    height:                         160px;  
+    border-radius:                  18px;
+}
+
+#search     {
+    margin-top:                     0.25rem !important;
+    width:                          80%;
+}
+
+#yelpsearch {
+    line-height:                    1.0; 
+    margin-top:                     0.25rem !important;
+}
+
+
+#zipcode {
+    width:                          250px; 
+}
+
+#results    {
+    font-size:                      95%;
+    vertical-align:                 middle;   
+}
+
+#selectType {
+    width:                          200px; 
+}
+
+/* STREAMING PAGE SPECIFIC CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#moviesearch {
+    line-height:                    1.0; 
+    margin-top:                     0.25rem !important;
+}
+
+
+#containerMovies {
+    height: 60px;
+    background-color: rgb(238, 84, 109);
+}
+
+#sub_buttons    {
+    float:                          left;
+    padding-right:                  4px;
+}
+
+#movietitle {
+    margin:                         0px;
+    padding:                        3px;
+    size:                           240px;
+    height:                         38px; 
+    text-align:                     center;
+}
+
+.movie {
+    margin-top:                     2px;
+}
+
+h2{
+    background-color: rgb(238, 84, 109);
+    margin: 30px;
+    text-align: center;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    transition: 250ms all;
+}
+
+section .imageContainer {
+    flex: 0 0 auto;
+}
+
+.imageContainer {
+   flex: 0 0 auto; 
+    margin:                         auto;
+    padding-top:                    4px;
+    padding-bottom:                 4px;
+    transition:                     250ms all;
+    width:                          210px;
+    border-radius:                  4px;
+    cursor:                         pointer;
+}
+
+.imageContainer:hover {
+    margin-left:                    0 40px;
+    transform:                      scale(1.2);
+    cursor:                         pointer;
+}
+
+.imageContainer img {
+    width:                          100%;
+    border:                         1px solid lightgrey;
+}
+
+.content {
+    display: none;
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 20px;
+   
+}
+
+.content-display {
+    display: block;
+}
+
+
+.content-display {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: pink;
+}
+
+
+/*you tube box*/
+.content div {
+    margin:                         10px;    
+}
+
+#content-close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    /* width: 35px;; */
+    border: 1px solid lightgrey;
+    border-radius: 45%;
+    left: 20px;
+    color:black;
+    background-color: red;
+
+    
+
+}
+
+#reviewContent  {
+    color:                          darkred;
+    background-color:               #495057;
+    }
+    
+#reviewContent:hover {
+    background-color:               darkred;
+    color:                          darkgoldenrod;
+}
+
+#linkOut{
+    margin:                         30px;
+    color:                          darkgoldenrod;
+}
+
+
+
+.form-group {
+    margin-bottom:                  1rem;
+}
+
+.form-control {
+    width:                          100%;
+    font-size:                      1rem;
+    font-weight:                    400;
+    line-height:                    1.5;
+    outline:                        none;
+    color:                          #495057;
+    background-color:               #fff;
+    background-clip:                padding-box;
+    border:                         1px solid #ced4da;
+    border-radius:                  .25rem;
+/*    padding: .375rem .75rem; */
+}
+
+.movieReview{  
+    float:                          left;  
+}
+
+
+/* Mobile devices (phones, 750px and smaller) */
+@media screen and (max-width: 750px) {
+
+    label {
+        font-size:                      102%;
+        text-align:                     center;
+    }
+
+    #yelpsearch {
+        line-height:                    1.0; 
+        margin-top:                     0.25rem !important;
+        padding:                        0;
+    }
+        
+    #selectType {
+        padding:                        0;
+        width:                          100px; 
+    }
+
+    #zipcode {
+        padding:                        6px;
+        width:                          100px; 
+    }
+
+    #results    {
+        font-size:                      92%;
+        vertical-align:                 middle;
+    }
+
+    #pic{
+        display:                          none;
+    }
+
+    #moviesearch {
+        line-height:                    1.0; 
+        margin-top:                     0.25rem !important;
+        padding:                        0px;
+    }
+    
+    #searchMovies {
+        margin:                         0px;
+        padding:                        0px;
+        width:                          68px;
+        height:                         36px; 
+    }
+
+    #sub_buttons    {
+        float:                          left;
+        padding-right:                  0px;
+    }
+    
+    #movietitle {
+        margin:                         0px;
+        padding:                        3px;
+        size:                           54%;
+        height:                         38px; 
+        text-align:                     center;
+    }
+
+}
