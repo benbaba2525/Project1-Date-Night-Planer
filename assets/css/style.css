@@ -134,6 +134,7 @@ label {
     line-height:                    1.0; 
     margin-top:                     0.25rem !important;
 }
+ 
 
 
 #zipcode {
@@ -158,6 +159,7 @@ html {
 #moviesearch {
     line-height:                    1.0; 
     margin-top:                     0.25rem !important;
+  
 }
 
 
@@ -170,6 +172,12 @@ html {
     float:                          left;
     padding-right:                  4px;
 }
+
+#searchMovies{
+    width:120px;
+}
+
+
 
 #movietitle {
     margin:                         0px;
