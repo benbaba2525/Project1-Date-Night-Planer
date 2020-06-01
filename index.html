@@ -3,15 +3,26 @@
     <meta charset="UTF-8">
     <title>Project 1 || Date Night Planner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap -->     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- jQuery -->   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <!--Added link to awesome icon --><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!-- Link to CSS -->  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!-- Link to Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
-  <!-- Link to Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
-</head>
+ <!--Added link to Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- jQuery -->   
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Latest compiled & minified JavaScript -->  
+  <script src="" crossorigin="anonymous"></script>
+  <!-- Link to CSS -->  
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Link to Google Font -->  
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+  <!-- Link to Google Font -->  
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+   <!--Added link to awesome icon -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!---Link to Map -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet" />
 
 <body>
+   
 <div class="wrapper">
     <div class="jumbotron align-middle" style="border-radius: 18px;"><h1>Date Night Planner</h1></div>
 </div>
@@ -29,75 +40,100 @@
         <div class="col-md-1"> </div>
     </div>
 
-    <div class="row-no-gutters align-middle align-items-center py-1 px-0">                  
-        <form id="form" class="form-inline">
-            <div class="col pr-1 pl-0" id="yelpsearch"><label for="user-input" class=".col-form-label-sm">Search Yelp<br>for Delivery</label></div>
-            <div class="col p-0" id="yelpInput">  
-                <input type="text" class="form-control" id="zipcode" placeholder="city , state or zipcode" required>
+        <div class="row-no-gutters align-middle align-items-center py-1 px-0">                  
+            <form id="form" class="form-inline">
+                <div class="col pr-1 pl-0" id="yelpsearch"><label for="user-input" class=".col-form-label-sm">Search Yelp<br>for Delivery</label></div>
+                <div class="col p-0" id="yelpInput">  
+                    <input type="text" class="form-control" id="input-term" placeholder="city , state or zipcode" required>
+        </div>
+        
+                <div class="col pl-0">
+                    <select id="selectType" class="form-control">
+                        <option selected>Food Type</option>
+                        <option value="asianfusion">Asian Fusion</option>
+                        <option value="bbq">BBQ</option>
+                        <option value="brazilian">Brazilian</option>
+                        <option value="burgers">Burgers</option>
+                        <option value="caribbean">Caribbean</option>
+                        <option value="cheesesteaks">Cheesesteaks</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="cuban">Cuban</option>
+                        <option value="desserts">Desserts</option>
+                        <option value="empanadas">Empanadas</option>
+                        <option value="french">French</option>
+                        <option value="gluten_free">Gluten-Free</option>
+                        <option value="greek">Greek</option>
+                        <option value="halal">Halal</option>
+                        <option value="indian">Indian</option>
+                        <option value="italian">Italian</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="kebab">Kebab</option>
+                        <option value="korean">Korean</option>
+                        <option value="latin">Latin American</option>
+                        <option value="mediterranean">Mediterranean</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="mideastern">Middle Eastern</option>
+                        <option value="moroccan">Moroccan</option>
+                        <option value="peruvian">Peruvian</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="salad">Salad</option>
+                        <option value="sandwiches">Sandwiches</option>
+                        <option value="seafood">Seafood</option>
+                        <option value="soulfood">Soul Food</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="steak">Steakhouses</option>
+                        <option value="tex-mex">Tex-Mex</option>
+                        <option value="thai">Thai</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="vegetarian">Vegetarian</option>
+                    </select>
+                </div>
+
+                <div class="col-auto align-left float-left" id="sub_buttons">
+                    <button type="button" value="Submit" class="btn btn-default" id="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+
+           
+            
+            <!---->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+   
+                <div id="results" class="card-body" ></div>
+             
             </div>
-            <div class="col pl-0">
-                <select id="selectType" class="form-control">
-                    <option selected>Food Type</option>
-                    <option value="asianfusion">Asian Fusion</option>
-                    <option value="bbq">BBQ</option>
-                    <option value="brazilian">Brazilian</option>
-                    <option value="burgers">Burgers</option>
-                    <option value="caribbean">Caribbean</option>
-                    <option value="cheesesteaks">Cheesesteaks</option>
-                    <option value="chinese">Chinese</option>
-                    <option value="cuban">Cuban</option>
-                    <option value="desserts">Desserts</option>
-                    <option value="empanadas">Empanadas</option>
-                    <option value="french">French</option>
-                    <option value="gluten_free">Gluten-Free</option>
-                    <option value="greek">Greek</option>
-                    <option value="halal">Halal</option>
-                    <option value="indian">Indian</option>
-                    <option value="italian">Italian</option>
-                    <option value="japanese">Japanese</option>
-                    <option value="kebab">Kebab</option>
-                    <option value="korean">Korean</option>
-                    <option value="latin">Latin American</option>
-                    <option value="mediterranean">Mediterranean</option>
-                    <option value="mexican">Mexican</option>
-                    <option value="mideastern">Middle Eastern</option>
-                    <option value="moroccan">Moroccan</option>
-                    <option value="peruvian">Peruvian</option>
-                    <option value="pizza">Pizza</option>
-                    <option value="salad">Salad</option>
-                    <option value="sandwiches">Sandwiches</option>
-                    <option value="seafood">Seafood</option>
-                    <option value="soulfood">Soul Food</option>
-                    <option value="Spanish">Spanish</option>
-                    <option value="steak">Steakhouses</option>
-                    <option value="tex-mex">Tex-Mex</option>
-                    <option value="thai">Thai</option>
-                    <option value="vegan">Vegan</option>
-                    <option value="vegetarian">Vegetarian</option>
-                </select>
-            </div>
-            <div class="col px-0">
-                <button id="search" type="button" value="Submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button><br>
-            </div>
-        </form>
     </div>
+
 </div>
 
-<div class="container" >   
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th>Restaurant</th>
-                    <th>Reviews</th>
-                    <th>Address</th>
-                    <th>Phone</th>
-                  </tr>
-                </thead>
-                <tbody id="results"></tbody>
-            </table>
+<!--   -->
+  
+    </div>
 </div> 
 
-<div class="footer"><p>&copy; Ben Pornamnuay, Francis Duya, Krista Clarke - Project 1 (Week 8)</p></div>
+<!---->
+</div>
+
+    <div class="footer"><p>&copy; Ben Pornamnuay, Francis Duya, Krista Clarke - Project 1 (Week 8)</p></div>
+<!-- Link to Map Direction -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+<link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css"
+    type="text/css"
+/>
+<!-- Link to Map Geocoder -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+<link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+type="text/css"
+/>
+
+<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+
  <!-- Link to JS -->
 <script src="assets/javascript/yelp.js"></script>
 </body>
