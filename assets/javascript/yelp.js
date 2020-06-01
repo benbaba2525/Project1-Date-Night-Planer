@@ -52,16 +52,13 @@ $(document).ready(function(){
                           
                            console.log(data.business);
     
-    $('#results').append(`<div class="card mb-3">
+    $('#results').append(`<div class="card mb-3" style="border: 1px solid rgba(128, 125, 125, 0.933);" >
       <div class="row no-gutters">
-      
         <div class="col-lg-4">
-        <div >
-      <a  id="busName" class="btn btn-primary" href="https://www.yelp.com/biz/${alias}" target="new">${name}</a>
-      </div>
-        <img id="pic" class="card-img" src=" ${image}" alt="${name}"> 
         
-      </div>
+        <img id="pic" class="card-img" src=" ${image}" alt="${name}">  
+       </div>
+
         <div class="col-lg-8">
           <div class="card-body >
             <h3 class="card-title" style="font-size: 20px;"><strong>Restaurant Name : </strong><span style="font-size: 18px;"> ${name}</span></h3>
@@ -69,12 +66,14 @@ $(document).ready(function(){
             <h3 class="card-title" style="font-size: 20px;"><strong>Phone : </strong><span style="font-size: 18px;">${phone}</span></h3>
             <h3 class="card-title" style="font-size: 20px;"><strong>Rating : </strong><span style="font-size: 18px;">${rating} <i class="fa fa-star" style="color:red;"></i></span></h3>
             <h3 class="card-title" style="font-size: 20px;"><strong>Reviews : </strong><span style="font-size: 18px;">${reviewcount}</span></h3>
-          </div>
+            <div >
+            <a id="busName" class="btn btn-primary" href="https://www.yelp.com/biz/${alias}" target="new">${name}</a>
+            </div>
+          
+            </div>
         </div>
       </div>
     </div>`);
-    
-
 
                         });
                    } else {
