@@ -1,4 +1,6 @@
 # Project1 (Date Night Planner Application)
+<a target="_blank" rel="nofollow" href="https://benbaba2525.github.io/Project1-Date-Night-Planer/">Check it out on Live</a>
+
 <h2 style ="border-bottom:1px;">Overview</h2>
 This is an important step in my full-stack journey as I will now use my newly acquired skills and knowledge to build web application from scratch. With my team, I will conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. Because I will be working collaboratively, I will learn agile development methodologies and implement feature and bug fixes using the git branch workflow and pull requests.
 
