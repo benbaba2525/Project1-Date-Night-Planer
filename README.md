@@ -31,7 +31,11 @@ In the application user can plan to date at home by click on dinner page to pick
 
 <h2 style ="border-bottom:1px;">Authors</h2>
 <ul>
-  <li>Kanyarut Pornamnuay   <a target="_blank" rel="nofollow" href="https://github.com/benbaba2525">Visit My Github Profile</a></li>
+  <li>Kanyarut Pornamnuay
+  <a target="_blank" rel="nofollow" href="https://github.com/benbaba2525">Visit My Github Profile & </a>
+  <a target="_blank" rel="nofollow" href="https://benbaba2525.github.io/My-Portfolio/">Visit My Portfolio</a>
+   </li>
+  
   <li>Krista Clarke</li>
   <li>Francis Duya</li>
 </ul>
